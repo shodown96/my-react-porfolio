@@ -1,0 +1,177 @@
+{
+  "main": {
+    "name": "Elijah Soladoye",
+    "occupation": "Fullstack Django | ReactJS Developer && UE4 Game Development Enthusiast",
+    "description": "Always learning how to build positively impacting, optimized and immersive stuff. #Mikaelson",
+    "image": "IG_Elijah.jpeg",
+    "bio": "My name is Elijah, I'm a Full Stack Django | ReactJS Developer. Just recently started learning React to compliment my Django so as to be fit for job placements, I've worked on E-commerce websites, Real time chatting apps, Blog apps worked with Allauth authentication, payment gateways like Paystack, Stripe, etc. Business campaign technologies like Sendgrid, Mailgun and Mailchimp, I also intend to go into Game dev much later when I'm able to get the required equipments. Currently Learning from a lot of tutors including Clever Programmer while also developing for clients.",
+    "contactmessage": "Get in touch with me to to build amazing and impacting stuff, I love a good challenge and more experience, so don't hold back.",
+    "email": "shodown96@gmail.com",
+    "phone": "+44 12 345 6789",
+    "address": {
+      "street": "123 Fake Street",
+      "city": "Nigeria",
+      "state": "Kwara",
+      "zip": "ABC 123"
+    },
+    "website": "#",
+    "resumedownload": "https://drive.google.com/file/d/1u4c-ke0zLTT2l2_nqvGzdXwSJCprFv-s/view?usp=sharing",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://web.facebook.com/elijah.soladoye/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/elijah-soladoye-2b99b11b5",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/shodown96/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/shodown96/",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here are some of the skils I've been oppurtuned to pick up.",
+    "education": [
+      {
+        "school": "Landmark University, Omu-Aran",
+        "degree": "BSc in Computer Science",
+        "graduated": "Still in progress...",
+        "description": "Undergraduate"
+      }
+    ],
+    "work": [
+      {
+        "company": "PLUV Foundation",
+        "title": "Fullstack web developer",
+        "years": "April 2020 - Present",
+        "description": "A contracted Job."
+      },
+      {
+        "company": "FStack Dev",
+        "title": "Backend Developer",
+        "years": "August 2020 - Present",
+        "description": "Just Practicing with a Mobile Dev partner for more experience with RESTful APIs."
+      },
+      {
+        "company": "Learning | Freelancing",
+        "title": "Software Engineer",
+        "years": "Never Ending",
+        "description": "Getting more experience each day."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "level": "80%"
+      },
+      {
+        "name": "Django",
+        "level": "85%"
+      },
+      {
+        "name": "Django REST Framework",
+        "level": "70%"
+      },
+      {
+        "name": "Vanilla JS | JQuery",
+        "level": "85%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "45%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "HTML5",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Firebase && Firestore",
+        "level": "60%"
+      },
+      {
+        "name": "S3 Buckets",
+        "level": "75%"
+      },
+      {
+        "name": "Bootstrap | MDB",
+        "level": "95%"
+      },
+      {
+        "name": "Heroku",
+        "level": "80%"
+      },
+      {
+        "name": "MySQL",
+        "level": "70%"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "65%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Ecommerce Website",
+        "category": "Fully functional Ecommerce Website built with Django and it template system, using HTML, CSS, JS, JQuery,",
+        "image": "ecommerce.png",
+        "url": "https://mikaelson96.herokuapp.com"
+      },
+      {
+        "title": "PLUV Foundation",
+        "category": "An actual work in progress for a client, An NGO Website",
+        "image": "pluv.png",
+        "url": "https://pluvfoundation.herokuapp.com"
+      },
+      {
+        "title": "Voting App",
+        "category": "Voting Website built with Django featuring Chart.js",
+        "image": "lmuvote.png",
+        "url": "https://lmuvote.herokuapp.com"
+      },
+      {
+        "title": "Django REST framework App",
+        "category": "A simple site providing RESTful APIs for Basic Authentication",
+        "image": "api.png",
+        "url": "https://lmu-dj-api.herokuapp.com/"
+      },
+      {
+        "title": "MarioPlan",
+        "category": "My first deployed app built with ReactJS featuring Redux, Firebase and Firestore",
+        "image": "marioplan.png",
+        "url": "https://firstreact-a1409.web.app/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Sonny Sangha must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
