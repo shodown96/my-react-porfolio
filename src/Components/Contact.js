@@ -10,8 +10,9 @@ const Contact = ({ data }) => {
    // console.log(data)
 
     const handleClick = (e) => {
-       e.preventDefault();
-      window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+      //  e.preventDefault();
+      // window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+      alert("Accepted")
     }
     
 
