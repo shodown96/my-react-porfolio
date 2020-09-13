@@ -13,6 +13,7 @@ const Contact = ({ data }) => {
       //  e.preventDefault();
       // window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
       alert("Accepted")
+      document.querySelector("#message-success").style.display = "block";
     }
     
 
@@ -38,9 +39,10 @@ const Contact = ({ data }) => {
          <div className="row">
             <div className="eight columns">
 
-               <form id="contactForm" name="contactForm" netlify>
-					<fieldset>
+               <form id="contactForm" name="contactForm" method="post">
 
+					<fieldset>
+                  <input type="hidden" name="form-name" value="contactForm" />
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
 						   <input value={name} type="text" size="35" id="contactName" name="contactName" onChange={e => setName(e.target.value)}/>
