@@ -37,7 +37,7 @@ const Contact = ({ data }) => {
          <div className="row">
             <div className="eight columns">
 
-               <form id="contactForm" name="contactForm">
+               <form id="contactForm" name="contactForm" netlify>
 					<fieldset>
 
                   <div>
@@ -59,6 +59,8 @@ const Contact = ({ data }) => {
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
                      <textarea value={message} onChange={e => setMessage(e.target.value)} cols="50" rows="5" id="contactMessage" name="contactMessage"></textarea>
                   </div>
+
+                  <div className="" data-netlify="true"></div>
 
                   <div>
                      <button type='submit' onClick={handleClick} className="submit">Submit</button>
