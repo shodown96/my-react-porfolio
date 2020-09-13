@@ -9,12 +9,12 @@ const Contact = ({ data }) => {
 
    // console.log(data)
 
-    const handleClick = (e) => {
+   //  const handleClick = (e) => {
       //  e.preventDefault();
       // window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
       // alert("Accepted")
       // document.querySelector("#message-success").style.display = "block";
-    }
+   //  }
     
 
     return (
