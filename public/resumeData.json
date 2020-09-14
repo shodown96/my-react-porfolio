@@ -159,6 +159,12 @@
         "category": "My first deployed app built with ReactJS featuring Redux, Firebase and Firestore",
         "image": "marioplan.png",
         "url": "https://firstreact-a1409.web.app/"
+      },
+      {
+        "title": "Amazon Clone",
+        "category": "Amazon Clone built with ReactJS featuring Functional components, Hooks, Context API, Firebase and Firestore",
+        "image": "amazon.png",
+        "url": "https://clone-3f488.web.app/"
       }
     ]
   },
