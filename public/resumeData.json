@@ -4,8 +4,8 @@
     "occupation": "Fullstack Django | ReactJS Developer && UE4 Game Development Enthusiast",
     "description": "Always learning how to build positively impacting, optimized and immersive stuff. #Mikaelson",
     "image": "IG_Elijah.jpeg",
-    "bio": "My name is Elijah, I'm a Full Stack Django | ReactJS Developer. Just recently started learning React to compliment my Django so as to be fit for job placements, I've worked on E-commerce websites, Real time chatting apps, Blog apps worked with Allauth authentication, payment gateways like Paystack, Stripe, etc. Business campaign technologies like Sendgrid, Mailgun and Mailchimp, I also intend to go into Game dev much later when I'm able to get the required equipments. Currently Learning from a lot of tutors including Clever Programmer while also developing for clients.",
-    "contactmessage": "Get in touch with me to to build amazing and impacting stuff, I love a good challenge and more experience, so don't hold back.",
+    "bio": "I'm a Full Stack Django | ReactJS Developer. Just recently started learning React to compliment my Django web development to fit for job placements, I've worked on e-commerce websites, real time chatting apps, blog apps, worked with allauth authentication, payment gateways like Paystack, Stripe, etc; business campaign technologies like Sendgrid, Mailgun and Mailchimp. Intending to go into Game development much later when required equipments are available. Currently learning from a lot of tutors including Clever Programmer, JustDjango and The NetNinja while also developing for clients.",
+    "contactmessage": "Get in touch with me to to build amazing and impacting stuff, I mean, who doesn't love a good challenge right?, so don't hold back.",
     "email": "shodown96@gmail.com",
     "phone": "+44 12 345 6789",
     "address": {
@@ -83,20 +83,12 @@
         "level": "70%"
       },
       {
-        "name": "Vanilla JS | JQuery",
-        "level": "85%"
-      },
-      {
         "name": "ReactJs",
         "level": "45%"
       },
       {
-        "name": "CSS",
+        "name": "Frontend Basics (HTML5, CSS, JS, JQuery)",
         "level": "90%"
-      },
-      {
-        "name": "HTML5",
-        "level": "95%"
       },
       {
         "name": "Git",
@@ -111,7 +103,7 @@
         "level": "75%"
       },
       {
-        "name": "Bootstrap | MDB",
+        "name": "Bootstrap || MDB",
         "level": "95%"
       },
       {
@@ -165,6 +157,12 @@
         "category": "Amazon Clone built with ReactJS featuring Functional components, Hooks, Context API, Firebase and Firestore",
         "image": "amazon.png",
         "url": "https://clone-3f488.web.app/"
+      },
+      {
+        "title": "Covid-19 Tracker",
+        "category": "A Single page app showing records of covid-19 cases around the world featuring ReactJS",
+        "image": "covid-19.png",
+        "url": "https://covid-19-tracker-b3746.web.app/"
       }
     ]
   },
