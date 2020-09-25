@@ -160,9 +160,15 @@
       },
       {
         "title": "Covid-19 Tracker",
-        "category": "A Single page app showing records of covid-19 cases around the world featuring ReactJS",
+        "category": "A single page app showing records of covid-19 cases around the world featuring ReactJS",
         "image": "covid-19.png",
         "url": "https://covid-19-tracker-b3746.web.app/"
+      },
+      {
+        "title": "Django | React Blog",
+        "category": "A simple django-react blog app featuring authentication and CRUD operations using DRF, axios and redux",
+        "image": "djr-blog.png",
+        "url": "https://djr-blog.herokuapp.com"
       }
     ]
   },
