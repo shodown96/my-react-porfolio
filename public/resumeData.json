@@ -169,6 +169,12 @@
         "category": "A simple django-react blog app featuring authentication and CRUD operations using DRF, axios and redux",
         "image": "djr-blog.png",
         "url": "https://djr-blog.herokuapp.com"
+      },
+      {
+        "title": "Django | React Ecommerce",
+        "category": "A django-react Ecommerce app featuring authentication, Cart functionality and Payment systems.",
+        "image": "djr-ecommerce.png",
+        "url": "https://djr-ecommerce.herokuapp.com"
       }
     ]
   },
