@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = ({ data }) => {
    // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
-   // const [name, setName] = useState('');
-   // const [subject, setSubject] = useState('');
-   // const [email, setEmail] = useState('');
-   // const [message, setMessage] = useState('');
+   
+   const [formData, setFormData] = useState({
+      name:"",
+      email:"",
+      subject:"",
+      message:"",
 
-   // const [formData, setFormData] = useState({
-   //    name:"",
-   //    email:"",
-   //    subject:"",
-   //    message:"",
+   })
 
-   // })
+   const { name, email, subject, message } = formData;
 
    // console.log(data)
 
@@ -23,23 +21,31 @@ const Contact = ({ data }) => {
    //    alert("Accepted")
    //    document.querySelector("#message-success").style.display = "block";
    //  }
-   // const encode = (data) => {
-   //    return Object.keys(data)
-   //        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-   //        .join("&");
-   //  }
 
-   // const handleSubmit = e => {
-   //    e.preventDefault();
-   //    // fetch("/", {
-   //    //    method: "POST",
-   //    //    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-   //    //    body: encode({ "contactForm": "contact", ...this.state })
-   //    //  })
-   //    //    .then(() => alert("Success!"))
-   //    //    .catch(error => alert(error));
-   //    console.log(formData)
-   // }
+   const encode = (data) => {
+      return Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&");
+    }
+
+   const handleChange = e => {
+      setFormData({
+         ...formData,
+         [e.target.id]:e.target.value
+      })
+   }
+
+   const handleSubmit = e => {
+      e.preventDefault();
+      fetch("/", {
+         method: "POST",
+         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+         body: encode({ "contactForm": "contact", ...formData })
+       })
+         .then(() => alert("Success!"))
+         .catch(error => alert(error));
+      console.log(formData, encode(formData))
+   }
 
     return (
       <section id="contact">
@@ -63,28 +69,27 @@ const Contact = ({ data }) => {
          <div className="row">
             <div className="eight columns">
 
-               <form id="contactForm" name="contactForm" method="post">
+               <form id="contactForm" name="contactForm" method="post" onSubmit={handleSubmit}>
 
 					<fieldset>
-                  {/* <input type="hidden" name="contactForm" value="contactForm" /> */}
                   <div>
 						   <label htmlFor="name">Name <span className="required">*</span></label>
-						   <input type="text" size="35" id="name" name="name"/>
+						   <input value={name} type="text" size="35" id="name" name="name" onChange={handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="email">Email <span className="required">*</span></label>
-						   <input type="text" size="35" id="email" name="email"/>
+						   <input value={email} type="email" size="35" id="email" name="email" onChange={handleChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="subject">Subject</label>
-						   <input type="text" size="35" id="subject" name="subject"/>
+						   <input value={subject} type="text" size="35" id="subject" name="subject" onChange={handleChange}/>
                   </div>
 
                   <div>
                      <label htmlFor="message">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="5" id="message" name="message"></textarea>
+                     <textarea value={message} onChange={handleChange} cols="50" rows="5" id="message" name="message"></textarea>
                   </div>
 
                   <div>
