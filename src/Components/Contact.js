@@ -10,12 +10,13 @@ const Contact = ({ data }) => {
    // console.log(data)
 
    //  const handleClick = (e) => {
-      //  e.preventDefault();
-      // window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
-      // alert("Accepted")
-      // document.querySelector("#message-success").style.display = "block";
+   //    e.preventDefault();
+   //    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+   //    alert("Accepted")
+   //    document.querySelector("#message-success").style.display = "block";
    //  }
-    
+   
+   const handleSubmit = e => {e.preventDefault();}
 
     return (
       <section id="contact">
@@ -39,7 +40,7 @@ const Contact = ({ data }) => {
          <div className="row">
             <div className="eight columns">
 
-               <form id="contactForm" name="contactForm" method="post">
+               <form id="contactForm" name="contactForm" method="post" onSubmit={handleSubmit}>
 
 					<fieldset>
                   <input type="hidden" name="form-name" value="contactForm" />
