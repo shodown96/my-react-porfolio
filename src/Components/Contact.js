@@ -38,7 +38,7 @@ const Contact = ({ data }) => {
       e.preventDefault();
       fetch("https://elijahsoladoye.herokuapp.com/api/contact/", {
          method: "POST",
-         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+         headers: { "Content-Type": "application/json" },
          body: formData
        })
          .then(() => {
