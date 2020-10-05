@@ -3,11 +3,10 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
 
-    if(this.props.data){
-      var networks= this.props.data.social.map(function(network){
+    const email = this.props.data?.email
+    const networks= this.props.data?.social.map(function(network){
         return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
       })
-    }
 
     return (
       <footer>
@@ -19,7 +18,7 @@ class Footer extends Component {
            </ul>
 
            <ul>
-            <li>Modified with love by the Clever Programmer team | Edited further by Elijah Soladoye <span role="img" aria-label="heart">♥️</span></li>
+            <li>Modified with love by the Clever Programmer team | Edited further by <a href={`mailto:${email}`}>Elijah Soladoye</a> <span role="img" aria-label="heart">♥️</span></li>
            </ul>
 
            <ul className="copyright">

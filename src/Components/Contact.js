@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Contact = ({ data }) => {
    // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
-
+   // const {email, subject, message, name} = formData
    //  const handleClick = (e) => {
    //    e.preventDefault();
    //    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
@@ -11,23 +11,11 @@ const Contact = ({ data }) => {
    //    document.querySelector("#message-success").style.display = "block";
    //  }
 
-   // const encode = (data) => {
-   //    return Object.keys(data)
-   //        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-   //        .join("&");
-   //  }
-
-   // handleSubmit = e => {
-   //    fetch("/", {
-   //      method: "POST",
-   //      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-   //      body: encode({ "form-name": "contact", ...this.state })
-   //    })
-   //      .then(() => alert("Success!"))
-   //      .catch(error => alert(error));
-
-   //    e.preventDefault();
-   //  };
+   const encode = (data) => {
+      return Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&");
+    }
    
    const [formData, setFormData] = useState({
       name:"",
@@ -36,8 +24,15 @@ const Contact = ({ data }) => {
       message:"",
 
    })
+   
 
-   const { name, email, subject, message } = formData;
+   const [state, setState] = useState({
+      loading:false,
+      success:false,
+      error:null
+   })
+
+   const { error, loading, success } = state
 
    const handleChange = e => {
       setFormData({
@@ -48,20 +43,19 @@ const Contact = ({ data }) => {
 
    const handleSubmit = e => {
       e.preventDefault();
+      setState({loading:true})
       fetch("https://elijahsoladoye.herokuapp.com/api/contact/", {
          method: "POST",
-         headers: { "Content-Type": "application/json" },
-         body: JSON.stringify(formData)
+         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+         body: encode(formData)
        })
-         .then(() => {
-            document.querySelector("#message-success").style.display = "block";
-            document.querySelector("#message-warning").style.display = "none";
+         .then((r) => {
+            setState({success:true})
+            document.querySelectorAll("input, textarea").forEach(input=> input.value="" )
          })
          .catch(error => {
-            document.querySelector("#message-warning").style.display = "block";
-            document.querySelector("#message-success").style.display = "none";
+            setState({error:error})
          });
-      // console.log(formData, encode(formData))
    }
 
     return (
@@ -91,26 +85,26 @@ const Contact = ({ data }) => {
 					<fieldset>
                   <div>
 						   <label htmlFor="name">Name <span className="required">*</span></label>
-						   <input value={name} type="text" size="35" id="name" name="name" onChange={handleChange} required/>
+						   <input type="text" size="35" id="name" name="name" onChange={handleChange} required/>
                   </div>
 
                   <div>
 						   <label htmlFor="email">Email <span className="required">*</span></label>
-						   <input value={email} type="email" size="35" id="email" name="email" onChange={handleChange} required/>
+						   <input type="email" size="35" id="email" name="email" onChange={handleChange} required/>
                   </div>
 
                   <div>
-						   <label htmlFor="subject">Subject</label>
-						   <input value={subject} type="text" size="35" id="subject" name="subject" onChange={handleChange} required/>
+						   <label htmlFor="subject">Subject <span className="required">*</span></label>
+						   <input type="text" size="35" id="subject" name="subject" onChange={handleChange} required/>
                   </div>
 
                   <div>
                      <label htmlFor="message">Message <span className="required">*</span></label>
-                     <textarea value={message} onChange={handleChange} cols="50" rows="5" id="message" name="message" required></textarea>
+                     <textarea onChange={handleChange} cols="50" rows="5" id="message" name="message" required></textarea>
                   </div>
 
                   <div>
-                     <button type='submit' className="submit">Submit</button>
+                     <button type='submit' className="submit">{loading? "Sending..." : "Submit"}</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                      </span>
@@ -118,10 +112,15 @@ const Contact = ({ data }) => {
 					</fieldset>
 				   </form>
 
-               <div id="message-warning"> Oops, seems I'm having a few issues with my server.</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
+               {error && <div id="message-warning">
+                  Uh oh, seems we have a problem here. Please try again, if the error persists,
+                  please feel free to send an email to "shodown96@gmail.com" directly. Thank you.
+                  </div>}
+				   {success && 
+                  <div id="message-success">
+                     <i className="fa fa-check"></i>Your message was sent, thank you!<br />
+                  </div>
+               }
            </div>
 
 
