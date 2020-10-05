@@ -79,22 +79,22 @@ const Contact = ({ data }) => {
 					<fieldset>
                   <div>
 						   <label htmlFor="name">Name <span className="required">*</span></label>
-						   <input value={name} type="text" size="35" id="name" name="name" onChange={handleChange}/>
+						   <input value={name} type="text" size="35" id="name" name="name" onChange={handleChange} required/>
                   </div>
 
                   <div>
 						   <label htmlFor="email">Email <span className="required">*</span></label>
-						   <input value={email} type="email" size="35" id="email" name="email" onChange={handleChange}/>
+						   <input value={email} type="email" size="35" id="email" name="email" onChange={handleChange} required/>
                   </div>
 
                   <div>
 						   <label htmlFor="subject">Subject</label>
-						   <input value={subject} type="text" size="35" id="subject" name="subject" onChange={handleChange}/>
+						   <input value={subject} type="text" size="35" id="subject" name="subject" onChange={handleChange} required/>
                   </div>
 
                   <div>
                      <label htmlFor="message">Message <span className="required">*</span></label>
-                     <textarea value={message} onChange={handleChange} cols="50" rows="5" id="message" name="message"></textarea>
+                     <textarea value={message} onChange={handleChange} cols="50" rows="5" id="message" name="message" required></textarea>
                   </div>
 
                   <div>
