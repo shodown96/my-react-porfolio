@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 
+
 const Contact = ({ data }) => {
    // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
+
+   //  const handleClick = (e) => {
+   //    e.preventDefault();
+   //    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+   //    alert("Accepted")
+   //    document.querySelector("#message-success").style.display = "block";
+   //  }
+
+   // const encode = (data) => {
+   //    return Object.keys(data)
+   //        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+   //        .join("&");
+   //  }
    
    const [formData, setFormData] = useState({
       name:"",
@@ -13,21 +27,6 @@ const Contact = ({ data }) => {
 
    const { name, email, subject, message } = formData;
 
-   // console.log(data)
-
-   //  const handleClick = (e) => {
-   //    e.preventDefault();
-   //    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
-   //    alert("Accepted")
-   //    document.querySelector("#message-success").style.display = "block";
-   //  }
-
-   const encode = (data) => {
-      return Object.keys(data)
-          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-          .join("&");
-    }
-
    const handleChange = e => {
       setFormData({
          ...formData,
@@ -37,14 +36,20 @@ const Contact = ({ data }) => {
 
    const handleSubmit = e => {
       e.preventDefault();
-      fetch("/", {
+      fetch("https://elijahsoladoye.herokuapp.com/api/contact/", {
          method: "POST",
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-         body: encode({ "contactForm": "contact", ...formData })
+         body: formData
        })
-         .then(() => alert("Success!"))
-         .catch(error => alert(error));
-      console.log(formData, encode(formData))
+         .then(() => {
+            document.querySelector("#message-success").style.display = "block";
+            document.querySelector("#message-warning").style.display = "none";
+         })
+         .catch(error => {
+            document.querySelector("#message-warning").style.display = "block";
+            document.querySelector("#message-success").style.display = "none";
+         });
+      // console.log(formData, encode(formData))
    }
 
     return (
@@ -101,7 +106,7 @@ const Contact = ({ data }) => {
 					</fieldset>
 				   </form>
 
-           <div id="message-warning"> Error boy</div>
+               <div id="message-warning"> Oops, seems I'm having a few issues with my server.</div>
 				   <div id="message-success">
                   <i className="fa fa-check"></i>Your message was sent, thank you!<br />
 				   </div>
