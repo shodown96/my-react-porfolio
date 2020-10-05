@@ -16,6 +16,18 @@ const Contact = ({ data }) => {
    //        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
    //        .join("&");
    //  }
+
+   // handleSubmit = e => {
+   //    fetch("/", {
+   //      method: "POST",
+   //      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+   //      body: encode({ "form-name": "contact", ...this.state })
+   //    })
+   //      .then(() => alert("Success!"))
+   //      .catch(error => alert(error));
+
+   //    e.preventDefault();
+   //  };
    
    const [formData, setFormData] = useState({
       name:"",
@@ -39,7 +51,7 @@ const Contact = ({ data }) => {
       fetch("https://elijahsoladoye.herokuapp.com/api/contact/", {
          method: "POST",
          headers: { "Content-Type": "application/json" },
-         body: formData
+         body: JSON.stringify(formData)
        })
          .then(() => {
             document.querySelector("#message-success").style.display = "block";
