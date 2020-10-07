@@ -288,6 +288,21 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
+.badge {
+   display: inline-block;
+   padding: 0.35em 0.65em;
+   /* font-size: 0.75em; */
+   font-weight: 800;
+   line-height: 1;
+   color: #fff;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: baseline;
+   border-radius: 0.25rem;
+   background-color: #F06000;
+   margin: 5px;
+ }
+
 .bars {
 	width: 95%;
 	float: left;
@@ -300,14 +315,14 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li {
    position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 20px;
-  	border-radius: 3px;
+  	/* margin-bottom: 60px; */
+  	/* background: #ccc; */
+  	/* height: 20px; */
+  	/* border-radius: 3px; */
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+   /* color: #313131; */
    /* color:#F06000; */
 	text-transform: uppercase;
    letter-spacing: 2px;

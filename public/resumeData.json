@@ -4,18 +4,18 @@
     "occupation": "Fullstack Django | ReactJS Developer && UE4 Game Development Enthusiast",
     "description": "Always learning how to build positively impacting, optimized and immersive stuff. #Mikaelson",
     "image": "IG_Elijah.jpeg",
-    "bio": "I'm a Full Stack Django | ReactJS Developer. Just recently started learning React to compliment my Django web development to fit for job placements, I've worked on e-commerce websites, real time chatting apps, blog apps, worked with allauth authentication, payment gateways like Paystack, Stripe, etc; business campaign technologies like Sendgrid, Mailgun and Mailchimp. Intending to go into Game development much later when required equipments are available. Currently learning from a lot of tutors including Clever Programmer, JustDjango and The NetNinja while also developing for clients.",
+    "bio": "I'm a Full Stack Django | ReactJS Developer. Just recently started learning React to compliment my Django web development to fit in for job placements, I've worked on e-commerce websites, real time chatting apps, blog apps, worked with allauth authentication, payment gateways like Paystack, Stripe, etc; business campaign technologies like Sendgrid, Mailgun and Mailchimp. Currently learning from a lot of tutors including Clever Programmer, JustDjango and The NetNinja while also developing for clients.",
     "contactmessage": "Get in touch with me to to build amazing and impacting stuff, I mean, who doesn't love a good challenge right?, so don't hold back.",
     "email": "shodown96@gmail.com",
-    "phone": "+44 12 345 6789",
+    "phone": "+234 909 345 5544",
     "address": {
-      "street": "123 Fake Street",
+      "street": "",
       "city": "Nigeria",
-      "state": "Kwara",
-      "zip": "ABC 123"
+      "state": "",
+      "zip": ""
     },
     "website": "#",
-    "resumedownload": "https://drive.google.com/file/d/1u4c-ke0zLTT2l2_nqvGzdXwSJCprFv-s/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/file/d/1vq_nQbtgjB0Qr0IA2t02SXce-4sXVnLb/view?usp=sharing",
     "social": [
       {
         "name": "facebook",
@@ -40,7 +40,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here are some of the skils I've been oppurtuned to pick up.",
+    "skillmessage": "Here are some of the skills I got to pick up.",
     "education": [
       {
         "school": "Landmark University, Omu-Aran",
@@ -54,19 +54,7 @@
         "company": "PLUV Foundation",
         "title": "Fullstack web developer",
         "years": "April 2020 - Present",
-        "description": "A contracted Job."
-      },
-      {
-        "company": "FStack Dev",
-        "title": "Backend Developer",
-        "years": "August 2020 - Present",
-        "description": "Practicing with a Mobile Dev partner for more experience with RESTful APIs."
-      },
-      {
-        "company": "Learning | Freelancing",
-        "title": "Software Engineer",
-        "years": "Never Ending",
-        "description": "Getting more experience each day."
+        "description": "I built a fullstack web application featuring Django, JQuery, Bootstrap, analytics, functional payment system, marketing and email campaigns, authentication and CRUD operations."
       }
     ],
     "skills": [
@@ -95,15 +83,15 @@
         "level": "60%"
       },
       {
-        "name": "Firebase && Firestore",
+        "name": "Firebase",
         "level": "60%"
       },
       {
-        "name": "S3 Buckets",
+        "name": "AWS S3 Buckets",
         "level": "75%"
       },
       {
-        "name": "Bootstrap || MDB",
+        "name": "Bootstrap",
         "level": "95%"
       },
       {
@@ -181,12 +169,16 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
+        "text": "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.",
+        "user": "Andrew Hunt"
       },
       {
-        "text": "That Sonny Sangha must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
+        "text": "Study without desire spoils the memory, and it retains nothing that it takes in.",
+        "user": "Leonardo da Vinci"
+      },
+      {
+        "text": "The most damaging phrase in the language is.. it's always been done this way",
+        "user": "Grace Hopper"
       }
     ]
   }

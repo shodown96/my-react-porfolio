@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 
 const Contact = ({ data }) => {
-   // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
-   // const {email, subject, message, name} = formData
    //  const handleClick = (e) => {
    //    e.preventDefault();
    //    window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
@@ -25,6 +23,8 @@ const Contact = ({ data }) => {
 
    })
    
+   const {email, subject, message, name} = formData
+   const [url, setUrl] = useState("");
 
    const [state, setState] = useState({
       loading:false,
@@ -39,6 +39,7 @@ const Contact = ({ data }) => {
          ...formData,
          [e.target.id]:e.target.value
       })
+      setUrl(`mailto:${email}?subject=${subject}&body=${name}: ${message}`)
    }
 
    const handleSubmit = e => {
@@ -114,7 +115,7 @@ const Contact = ({ data }) => {
 
                {error && <div id="message-warning">
                   Uh oh, seems we have a problem here. Please try again, if the error persists,
-                  please feel free to send an email to "shodown96@gmail.com" directly. Thank you.
+                  please feel free to send an email to <a target="_blank" rel="noopener noreferrer" href={url}>shodown96@gmail.com</a> directly. Thank you.
                   </div>}
 				   {success && 
                   <div id="message-success">
@@ -127,12 +128,13 @@ const Contact = ({ data }) => {
             <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+					   <h4>Contact Details</h4>
 					   <p className="address">
 						   {data?.name}<br />
-						   {data?.address.street} <br />
-						   {data?.address.city}, {data?.address.state} {data?.address.zip}<br />
-						   <span>{data?.phone}</span>
+						   {/* {data?.address.street} <br />
+						   {data?.address.city}, {data?.address.state} {data?.address.zip}<br /> */}
+						   <span>{data?.phone}</span><br/>
+                     <span>{data?.email}</span>
 					   </p>
 				   </div>
 
