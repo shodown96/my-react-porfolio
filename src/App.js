@@ -10,6 +10,11 @@ import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css"
+import "swiper/components/pagination/pagination.min.css"
+
 class App extends Component {
 
   constructor(props){
