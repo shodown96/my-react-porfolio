@@ -4,7 +4,7 @@
     "occupation": "Fullstack Django | ReactJS Developer && UE4 Game Development Enthusiast",
     "description": "Always learning how to build positively impacting, optimized and immersive stuff. #Mikaelson",
     "image": "IG_Elijah.jpeg",
-    "bio": "I'm a Full Stack Django | ReactJS Developer with over four years of experience. I've worked on e-commerce websites, real time chatting apps, blog apps, worked with allauth authentication, payment gateways like Paystack, Stripe, etc; business campaign technologies like Sendgrid, Mailgun and Mailchimp. Learnt a lot from a lot of tutors including Clever Programmer, CoreyMS, Colt Steele, JustDjango and The NetNinja while also developing for clients. I love to build optimized and secure application which help in positively impacting people's lives or help in solving an issue.",
+    "bio": "I'm a Full Stack Django | ReactJS Developer with over four years of experience. I've worked on e-commerce websites, real time chatting apps, blog apps, worked with allauth authentication, payment gateways like Paystack, Stripe, etc; business campaign technologies like Sendgrid, Mailgun and Mailchimp. Learnt a lot from a lot of tutors including Clever Programmer, CoreyMS, Colt Steele, JustDjango and The NetNinja while also developing for clients. I love to build optimized and secure application which help in positively impacting people's lives or help in solving a problem.",
     "contactmessage": "Get in touch with me to to build amazing and impacting stuff, I mean, who doesn't love a good challenge right?, so don't hold back.",
     "email": "shodown96@gmail.com",
     "phone": "+234 909 345 5544",
@@ -77,6 +77,10 @@
         "level": "70%"
       },
       {
+        "name": "NodeJS",
+        "level": "80%"
+      },
+      {
         "name": "ReactJs",
         "level": "45%"
       },
@@ -115,6 +119,10 @@
       {
         "name": "PostgreSQL",
         "level": "65%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "65%"
       }
     ]
   },
@@ -149,6 +157,18 @@
         "category": "My first deployed app built with ReactJS featuring Redux, Firebase and Firestore",
         "image": "marioplan.png",
         "url": "https://firstreact-a1409.web.app/"
+      },
+      {
+        "title": "Spotify Clone",
+        "category": "Spotify clone built with ReactJS using spotify's API. You can't play song's due to my account not being premium",
+        "image": "spotify.png",
+        "url": "https://spotify-clone-phi.vercel.app/"
+      },
+      {
+        "title": "Discord Clone",
+        "category": "Discord clone built with the MERN stack",
+        "image": "discord.png",
+        "url": "https://spotify-clone-phi.vercel.app/"
       },
       {
         "title": "Amazon Clone",
