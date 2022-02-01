@@ -168,7 +168,7 @@
         "title": "Discord Clone",
         "category": "Discord clone built with the MERN stack",
         "image": "discord.png",
-        "url": "https://spotify-clone-phi.vercel.app/"
+        "url": "https://discord-clone-b6582.web.app/"
       },
       {
         "title": "Amazon Clone",
@@ -193,6 +193,12 @@
         "category": "A django-react Ecommerce app featuring authentication, Cart functionality and Payment systems.",
         "image": "djr-ecommerce.png",
         "url": "https://djr-ecommerce.herokuapp.com"
+      },
+      {
+        "title": "VoteChain | Voting Dapp",
+        "category": "A Voting Dapp built with solidarity and NextJS, an app that runs on ethereum blockchain technology.",
+        "image": "votechain.png",
+        "url": "https://voting-dapp.vercel.app/login"
       }
     ]
   },
