@@ -4,9 +4,9 @@
     "occupation": "Fullstack Django | ReactJS Developer && UE4 Game Development Enthusiast",
     "description": "Always learning how to build positively impacting, optimized and immersive stuff. #Mikaelson",
     "image": "IG_Elijah.jpeg",
-    "bio": "I have over four years of experience as a Full Stack Django | ReactJS Developer. I've worked on e-commerce websites, real-time chatting apps, and blog apps, as well as allauth authentication, payment gateways such as Paystack and Stripe, and business campaign technologies such as Sendgrid, Mailgun, and Mailchimp, all of which were deployed to services such as Heroku, AWS, and Firebase. I enjoy problem solving and developing optimized and secure programs that have a beneficial impact on people's lives.",
+    "bio": "Hello, my name is Elijah Soladoye, and I'm a full-stack developer with over four years of expertise who knows how to build applications with Django, Postgres, and React, among other technologies. I appreciate resolving issues, increasing customer satisfaction, and working with other developers to add value, and I'm always willing to learn more. Over the years, I've worked as a backend developer, a frontend developer, and a full-stack developer for a variety of organisations and clients. To promote optimal collaboration among developers, I believe that effective communication, discipline, work-life balance, and honesty should be maintained when working with individuals. I also feel that as a team player, one must be willing to make sacrifices in order to help the team when necessary.",
     "contactmessage": "Get in touch with me to to build amazing and impacting stuff, I mean, who doesn't love a good challenge right?, so don't hold back.",
-    "email": "shodown96@gmail.com",
+    "email": "elijahsoladoye@rocketmail.com",
     "phone": "+234 909 345 5544",
     "address": {
       "street": "",
@@ -15,7 +15,7 @@
       "zip": ""
     },
     "website": "#",
-    "resumedownload": "https://drive.google.com/file/d/1XMRXd7rHWIDzQHqsu_lqKwtwbB3bNie5/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/file/d/1WtyWvfyO0o8YKKcF1GHSQ3HzpDYpASe_/view?usp=sharing",
     "social": [
       {
         "name": "facebook",
@@ -45,8 +45,8 @@
       {
         "school": "Landmark University, Omu-Aran",
         "degree": "BSc in Computer Science",
-        "graduated": "Still in progress...",
-        "description": "Undergraduate"
+        "graduated": "2022",
+        "description": ""
       }
     ],
     "work": [
